@@ -21,7 +21,7 @@ resource "aws_instance" "ubuntu_instance" {
             state: present
         - name: Clone a Git repository (Optional)
           git:
-            repo: 'https://github.com/your-repo.git'
+            repo: 'https://github.com/Nasibkin/ec2-ansible'
             dest: /home/ubuntu/repo
     " > /home/ubuntu/playbook.yml
     ansible-playbook /home/ubuntu/playbook.yml
